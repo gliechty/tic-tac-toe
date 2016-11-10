@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>TickTack...Tow!</h1>	
+	<section id="buttonBox">
+		<button onclick="reset()">Reset</button>
+	</section>
+	<br><br>
+	<section id="board">
+		<div id="1" class="square" onclick="markMove1()"></div>
+		<div id="2" class="square" onclick="markMove2()"></div>
+		<div id="3" class="square" onclick="markMove3()"></div>
+		<div id="4" class="square" onclick="markMove4()"></div>
+		<div id="5" class="square" onclick="markMove5()"></div>
+		<div id="6" class="square" onclick="markMove6()"></div>
+		<div id="7" class="square" onclick="markMove7()"></div>
+		<div id="8" class="square" onclick="markMove8()"></div>
+		<div id="9" class="square" onclick="markMove9()"></div>
+	</section>
+	<footer>
+		<div id="winMessage" onclick="reset()"></div>
+	</footer>
+</body>
+</html>
