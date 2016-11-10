@@ -169,16 +169,16 @@ var checkWin = function () {
 	console.log("it's getting called");
 	console.log("x moves"+xMoves);
 	console.log("o moves"+oMoves);
-	if (xMoves.includes((1,2,3)||(4,5,6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
+	if (xMoves.includes((1&&2&&3)||(4&&5&&6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
 		alert("X WINS!!");
 	} else if (oMoves.includes((1&&2&&3)||(4&&5&&6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
 		alert("O WINS!!");
 	} 
-	// else {
-	// 	if (numTurns.length==9) {
-	// 		alert("It's a stalemate");
-	// 	}
-	// }
+	else {
+		if (numTurns.length==9) {
+			alert("It's a stalemate");
+		}
+	}
 };
 
 // var stalemate = function (){
@@ -187,11 +187,10 @@ var checkWin = function () {
 // 	}
 // };
 
-// var reset = function(){
-// 	var allSquares = document.getElementsByTagName("div");
-// 	allSquares.textContent="";
-// 	// allSquares.style.background="rgba(244, 179, 66, .8)";
-// };
+var reset = function(){
+	location.reload();
+	// allSquares.style.background="rgba(244, 179, 66, .8)";
+};
 // determine winner or draw
 
 // reset the board
