@@ -45,9 +45,9 @@ var markMove2 = function () {
 	}
 checkWin();
 };
+
 var markMove3 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell3 = document.getElementById("3");
 		cell3.style.background= "blue";
 		cell3.textContent="X";
@@ -62,9 +62,9 @@ var markMove3 = function () {
 	}
 checkWin();
 };
+
 var markMove4 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell4 = document.getElementById("4");
 		cell4.style.background= "blue";
 		cell4.textContent="X";
@@ -79,9 +79,9 @@ var markMove4 = function () {
 	}
 checkWin();
 };
+
 var markMove5 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell5 = document.getElementById("5");
 		cell5.style.background= "blue";
 		cell5.textContent="X";
@@ -96,9 +96,9 @@ var markMove5 = function () {
 	}
 checkWin();
 };
+
 var markMove6 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell6 = document.getElementById("6");
 		cell6.style.background= "blue";
 		cell6.textContent="X";
@@ -113,9 +113,9 @@ var markMove6 = function () {
 	}
 checkWin();
 };
+
 var markMove7 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell7 = document.getElementById("7");
 		cell7.style.background= "blue";
 		cell7.textContent="X";
@@ -130,9 +130,9 @@ var markMove7 = function () {
 	}
 checkWin();
 };
+
 var markMove8 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell8 = document.getElementById("8");
 		cell8.style.background= "blue";
 		cell8.textContent="X";
@@ -147,9 +147,9 @@ var markMove8 = function () {
 	}
 checkWin();
 };
+
 var markMove9 = function () {
 	if (numTurns%2 === 0) {
-		console.log("x moves");
 		cell9 = document.getElementById("9");
 		cell9.style.background= "blue";
 		cell9.textContent="X";
@@ -165,16 +165,18 @@ var markMove9 = function () {
 checkWin();
 };
 
-var checkWin = function (){
+var checkWin = function () {
 	console.log("it's getting called");
-	if (xMoves.includes((1&&2&&3)||(4&&5&&6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
+	console.log("x moves"+xMoves);
+	console.log("o moves"+oMoves);
+	if (xMoves.includes((1,2,3)||(4,5,6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
 		alert("X WINS!!");
 	} else if (oMoves.includes((1&&2&&3)||(4&&5&&6)||(7&&8&&9)||(1&&4&&7)||(2&&5&&8)||(3&&6&&9)||(1&&5&&9)||(3&&5&&7))){
 		alert("O WINS!!");
 	} 
 	// else {
-	// 	if ((numTurns).length==9) {
-	// 	alert("It's a stalemate");
+	// 	if (numTurns.length==9) {
+	// 		alert("It's a stalemate");
 	// 	}
 	// }
 };
@@ -185,11 +187,11 @@ var checkWin = function (){
 // 	}
 // };
 
-var reset = function(){
-	var allSquares = document.getElementsByTagName("div");
-	allSquares.textContent="";
-	// allSquares.style.background="rgba(244, 179, 66, .8)";
-};
+// var reset = function(){
+// 	var allSquares = document.getElementsByTagName("div");
+// 	allSquares.textContent="";
+// 	// allSquares.style.background="rgba(244, 179, 66, .8)";
+// };
 // determine winner or draw
 
 // reset the board
